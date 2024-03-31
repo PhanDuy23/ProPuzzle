@@ -1,24 +1,34 @@
 package controller;
 
+import java.io.IOException;
+import java.util.List;
+import model.*;
 /**
  *
  * @author FPT
  */
 public class HandleAdmin {
 
-    private String password = new String("admin");
+    private final String password = new String("admin");
 
-    public void addQuestion(Question q) {
-        // lưu s vào file
-        System.out.println("add" + q.getQuestion());
+    public void addQuestion(Question q) throws IOException {       
+        HandleFile x = new HandleFile();
+        x.saveData(q.getAllQuestion());
+    }
+    public List<String> findQuestion(Question q) throws IOException {       
+        HandleFile x = new HandleFile();
+        List<String> list =  x.findDataByKeyword(q.getId());
+        return list;
     }
 
-    public void fixQuestion(Question q) {
-        System.out.println("fix" + q.getQuestion());
+    public void fixQuestion(Question q) throws IOException {
+        deleteQuestion(q);
+        addQuestion(q);
     }
 
-    public void deleteQuestion(Question q) {
-        System.out.println("delete" + q.getQuestion());
+    public void deleteQuestion(Question q) throws IOException {
+        HandleFile x = new HandleFile();
+        x.deleteByKeyword(q.getId());
     }
 
     public Boolean checkPassword(String s) {

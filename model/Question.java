@@ -1,4 +1,4 @@
-package controller;
+package model;
 
 /**
  *
@@ -21,9 +21,48 @@ public class Question {
         this.d = d;
     }
     
-    public String getQuestion(){
-        String cut = "-";
+    public String getAllQuestion(){
+        String cut = "</>";
         return id + cut + question + cut + a + cut + b + cut + c + cut + d; 
     }
 
+    public String getA() {
+        return a;
+    }
+
+    public String getB() {
+        return b;
+    }
+
+    public String getC() {
+        return c;
+    }
+    
+    public String getD() {
+        return d;
+    }
+    public String getQuestion() {
+        return question;
+    }   
+    
+    public String getId() {
+        return id;
+    }
+
+    public void setA(String a) {
+        this.a = a;
+    }
+
+    public void setB(String b) {
+        this.b = b;
+    }
+
+    public void setC(String c) {
+        this.c = c;
+    }
+
+    public void setD(String d) {
+        this.d = d;
+    }
+    
 }
