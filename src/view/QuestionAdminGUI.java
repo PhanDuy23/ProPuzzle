@@ -9,11 +9,11 @@ import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableColumn;
 
-public class ShowQuestionAdmin {
+public class QuestionAdminGUI {
 
-    private JFrame f;
+    private final JFrame f;
 
-    public ShowQuestionAdmin(List<String> list) {
+    public QuestionAdminGUI(List<String> list) {
         f = new JFrame();
         String data[][] = new String[list.size()][2];
         for (int i = 0; i < list.size(); i++) {
@@ -28,21 +28,21 @@ public class ShowQuestionAdmin {
         }
         String column[] = {"STT", "Question"};
         JTable table = new JTable(data, column);
-        table.setBounds(30, 40, 200, 300);
-        TableColumn column1 = table.getColumnModel().getColumn(0); 
-        column1.setPreferredWidth(50); 
+        table.setRowHeight(50);
+        TableColumn column1 = table.getColumnModel().getColumn(0);
+        column1.setPreferredWidth(50);
         TableColumn column2 = table.getColumnModel().getColumn(1);
-        column2.setPreferredWidth(350); 
+        column2.setPreferredWidth(1200);
+
         DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
-        centerRenderer.setHorizontalAlignment(SwingConstants.CENTER); 
-        table.getColumnModel().getColumn(0).setCellRenderer(centerRenderer); 
+        centerRenderer.setHorizontalAlignment(SwingConstants.CENTER);
+        table.getColumnModel().getColumn(0).setCellRenderer(centerRenderer);
         JScrollPane sp = new JScrollPane(table);
+
         f.add(sp);
+        f.setBackground(Color.orange);
         f.setSize(400, 500);
         f.setLocationRelativeTo(null);
-        table.setBackground(Color.pink);
-        f.getContentPane().setBackground(Color.pink);
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);
     }
 }

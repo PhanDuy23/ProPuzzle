@@ -89,7 +89,8 @@ public class HandleFile {
         String line ;
         List<String> list = new ArrayList<>();
         while ((line = br.readLine()) != null) {
-            if (line.contains(s) != true) {
+            String[] x = line.split("</>");
+            if (x[0].equals(s) != true) {
                 list.add(line);
             } else {
                 sizeRow--;

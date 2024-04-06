@@ -6,10 +6,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-/**
- *
- * @author FPT
- */
 public final class HandleQuestion {
 
     private Integer numberQuestion, maxQuestion;
@@ -35,7 +31,7 @@ public final class HandleQuestion {
         setListAnswerRight();
         listAnswerUser = new ArrayList<>(maxQuestion + 5);
         for (int i = 0; i < maxQuestion + 5; i++) {
-             listAnswerUser.add(0);
+            listAnswerUser.add(0);
         }
 
     }
@@ -120,6 +116,14 @@ public final class HandleQuestion {
         return listQuestion;
     }
 
+    public List<Integer> getListAnswerRight() {
+        return listAnswerRight;
+    }
+
+    public List<Integer> getListAnswerUser() {
+        return listAnswerUser;
+    }
+
     public Integer getNumberQuestion() {
         return numberQuestion;
     }
@@ -134,5 +138,4 @@ public final class HandleQuestion {
         int x = (int) (Math.random() * max + 1); // min = 1
         return x;
     }
-
 }
