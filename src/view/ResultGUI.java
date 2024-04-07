@@ -1,22 +1,10 @@
 package view;
 
-import controller.ResultController;
-import java.awt.Color;
-import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JList;
-import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 /**
@@ -30,7 +18,6 @@ public class ResultGUI {
     private final JButton review = new JButton("xem lại");
     private JTextField idQuestion = new JTextField();
     private Integer numberQuestion;
-
     public ResultGUI() {  
         resultFrame.add(result);
         resultFrame.add(reviewButtonText);
