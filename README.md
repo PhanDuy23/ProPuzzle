@@ -10,7 +10,7 @@ Dự án được thực hiện bởi Phan Văn Duy, trong quá trình học L�
 
 ## Demo Image
 
-- [init](https://www.facebook.com/c780f21e-b786-4e7d-9cb5-27534093c65a)
+- [init](blob:https://www.facebook.com/2ec89fde-70f3-41eb-ae20-b69a7bb1f197)
 - [admin](https://www.facebook.com/038b5d73-688a-4aab-8ad3-a8a4775280d2)
 - [user](https://www.facebook.com/dec613bb-4960-4162-b3e7-de095a860080)
 - [question](https://www.facebook.com/0e3d8e94-8b15-4237-9323-1ee34ae8f7a8)
