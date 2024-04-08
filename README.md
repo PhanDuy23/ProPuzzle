@@ -10,8 +10,12 @@ Dự án được thực hiện bởi Phan Văn Duy, trong quá trình học L�
 
 ## Demo Image
 
-- ![video](https://raw.githubusercontent.com/PhanDuy23/ProPuzzle/main/demo%20picture/admin.png)
-- [video](https://www.youtube.com/watch?v=4oGnWee210U) 
+- ![](https://github.com/PhanDuy23/ProPuzzle/blob/main/demo%20picture/init.png) 
+- ![](https://raw.githubusercontent.com/PhanDuy23/ProPuzzle/main/demo%20picture/admin.png)
+- ![]()
+- ![]()
+- ![]()
+- ![]() 
 
 
 ## Features
