@@ -46,8 +46,6 @@ Dự án được thực hiện bởi Phan Văn Duy, trong quá trình học L�
 
 - Project Structure
 
-``` bash
-
 ## Contributing
 
 ## License
